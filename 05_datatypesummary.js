@@ -43,4 +43,28 @@ const myFunction=function(){
 
 console.log(typeof bigNumber);           //to know the name of datatype   (null ka typeof=object)
 
+
+/************************ MEMORY *********************/
+
+//stack in  Primitive -we get a copy of variable when declared in heap
+//heap in non-primitive -reference of oroginal value
+
+let myName="Khushu Rajput"
+
+anName=myName
+anName="Rishu Rajput"
+console.log(anName)
+console.log(myName)
+
+let user={
+    email:"khsuhu@gmail",
+    upi:"user@ybl"
+}
+
+let user1=user
+user1.email="rishu@gmail.com"
+console.log(user1.email);
+console.log(user.email);
+
+
 //Note:Javascript is dynamically typed language because type checking occurs at run time//
